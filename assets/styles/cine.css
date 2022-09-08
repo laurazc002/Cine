@@ -1,0 +1,19 @@
+.navbar{
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+
+    
+}
+
+main{
+    position:absolute;
+    background-color: black;
+    padding-top: 100px;
+}
+
+.menu{
+    background-color: black;
+}
+
