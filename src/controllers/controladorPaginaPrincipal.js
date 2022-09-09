@@ -15,10 +15,10 @@ export function pintarPeliculas(peliculas){
     FotoPelicula.classList.add("img-fluid","w-100","my-3")
     FotoPelicula.src = pelicula.fotos
 
-    let nombrePelicula = document.createElement("h4")
+    let nombrePelicula = document.createElement("h3")
     nombrePelicula.textContent = pelicula.nombre
 
-    let nombreIngles = document.createElement("h6")
+    let nombreIngles = document.createElement("h4")
     nombreIngles.classList.add("text-muted")
     nombreIngles.textContent = `Titulo en Ingles: ${pelicula.tituloIngles}`
 
@@ -26,11 +26,11 @@ export function pintarPeliculas(peliculas){
     estrenoPelicula.classList.add("text-muted")
     estrenoPelicula.textContent = `Estreno: ${pelicula.estreno}`
 
-    let generoPelicula = document.createElement("h6")
+    let generoPelicula = document.createElement("h5")
     generoPelicula.classList.add("text-muted")
     generoPelicula.textContent = `Genero: ${pelicula.genero}`
 
-    let duracionPelicula = document.createElement("h6")
+    let duracionPelicula = document.createElement("h7")
     duracionPelicula.classList.add("text-muted")
     duracionPelicula.textContent = `Duración: ${pelicula.duracion}`
 
