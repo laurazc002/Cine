@@ -13,7 +13,7 @@ export function pintarPeliculas(peliculas){
 
     let FotoPelicula = document.createElement("img")
     FotoPelicula.classList.add("img-fluid","w-100","my-3")
-    FotoPelicula.src = pelicula.fotos
+    FotoPelicula.src = pelicula.fotos[0]
 
     let nombrePelicula = document.createElement("h3")
     nombrePelicula.textContent = pelicula.nombre

@@ -1,0 +1,26 @@
+.container{
+    position: absolute;  
+    top: 100px; 
+   }
+   .banner{
+       z-index: -1;
+       width: 100%;
+       height: 550px;
+       
+   }
+
+   .nombre{
+    color: white;
+    font-size: 17px;
+   
+    
+   }
+
+   .trailer{
+
+    height: 300px;
+    width: 400px ;
+    position: absolute;
+    bottom: 200px;
+    
+   }
