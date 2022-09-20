@@ -1,9 +1,9 @@
-export function pintarPeliculas(peliculas){
+export  function pintarPeliculasPronto(pelis){
 
-    let fila = document.getElementById("fila")
+    let fila = document.getElementById("filaPronto")
     fila.innerHTML= ""
 
-    peliculas.forEach(function(pelicula){
+    pelis.forEach(function(pelicula){
 
     let columna = document.createElement("div")
     columna.classList.add("col")
