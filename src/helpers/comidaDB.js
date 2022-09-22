@@ -1,4 +1,4 @@
-let comidaDB = [
+export let comidaDB = [
     {
         nombre: 'Confiteria' ,
         imagen: "https://firebasestorage.googleapis.com/v0/b/cine-2ddbf.appspot.com/o/confiteria.png?alt=media&token=32cbcb46-d8b9-40e4-92ec-0143546792b1",
