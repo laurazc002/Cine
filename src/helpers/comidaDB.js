@@ -67,7 +67,7 @@ export let comidaDB = [
             },
 
             {
-                nombre:"Perro Caliente y Nachoscon queso cheddar",
+                nombre:"Perro Caliente y Nachos con queso cheddar",
                 imagen: "https://firebasestorage.googleapis.com/v0/b/cine-2ddbf.appspot.com/o/perrocalienteynachos.jpg?alt=media&token=0bc4fc73-3da9-4376-8936-1e24ce399af2",
                 combos:[
                     {

@@ -1,3 +1,5 @@
+import { ampliarInfoPelicula } from "./controladorDetectarContenido.js"
+
 export  function pintarPeliculasPronto(pelis){
 
     let fila = document.getElementById("filaPronto")
@@ -52,6 +54,23 @@ export  function pintarPeliculasPronto(pelis){
     tarjeta.appendChild(recomendacionPelicula)
     columna.appendChild(tarjeta)
     fila.appendChild(columna)
+
+
+    tarjeta.addEventListener('click',function(evento){
+
+        let pelicula=ampliarInfoPelicula(evento);
+        console.log(pelicula)
+        
+        sessionStorage.setItem('pelis',JSON.stringify(pelicula))
+        
+        window.location.href='./ampliarInfoPelicula.html'       
+
+
+    })
+   
+
+
+
 })
 
 }
