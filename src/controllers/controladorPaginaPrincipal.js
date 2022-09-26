@@ -52,6 +52,9 @@ export function pintarPeliculas(peliculas){
     tarjeta.appendChild(recomendacionPelicula)
     columna.appendChild(tarjeta)
     fila.appendChild(columna)
+
+
+    
 })
 
 }

@@ -1,6 +1,6 @@
 import { comidaDB } from "../helpers/comidaDB.js";
+import {detectarComidaFiltro} from './controladorDetectarComidas.js'
 
-console.log(comidaDB[0].imagen)
 let imagenesCarrusel=document.getElementById('imagenesCarrusel')
 comidaDB.forEach(function(comida){
 let imagenEtiqueta= document.createElement('img')
@@ -22,6 +22,7 @@ foto.src=categoria.imagen
 let nombreCat= document.createElement('h4')
 nombreCat.classList.add('bold')
 
+
 nombreCat.textContent=categoria.nombre
 
 fila.appendChild(tarjeta)
@@ -30,13 +31,11 @@ tarjeta.appendChild(nombreCat)
   
 tarjeta.addEventListener('click',function(evento){
 
-    let  paquete={
-        foto: evento.target.parentElement.querySelector('img').src,
-        nombre: evento.target.parentElement.querySelector('h4').textContent
-    }
-    sessionStorage.setItem('paquete',paquete)  
+let  paquete= detectarComidaFiltro(evento)
+console.log(paquete)
 
-    window.location.href='./comidaFiltro1.html'
+sessionStorage.setItem('paquete',JSON.stringify(paquete))  
+  window.location.href='./comidaFiltro1.html'
 
 
 })
