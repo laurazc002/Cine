@@ -1,5 +1,8 @@
 //funcion autoinvocada
+let ponerCiudad
+
 (async()=> {
+    let ciudadUbicacion=document.getElementById('ciudad')
     
     const {value:ciudad} = await Swal.fire({
         title: "Bienvenido",
@@ -28,10 +31,15 @@
         }
         
     });
-
-    if(ciudad){
-        alert(ciudad)
-    }
-
+   let city=ciudad
+   sessionStorage.setItem('ciudad',city)
+ 
+   ciudadUbicacion.textContent=ponerCiudad    
 })()
+let ciudadUbicacion=document.getElementById('ciudad')
+ponerCiudad=sessionStorage.getItem('ciudad')
+
+
+ciudadUbicacion.textContent=ponerCiudad
+
 

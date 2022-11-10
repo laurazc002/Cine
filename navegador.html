@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../../assets/styles/comida.css">
-    <link rel="stylesheet" href="../../assets/styles/menu.css">
-
-    <title id="pestaña"></title>
+    <link rel="stylesheet" href="./assets/styles/cine.css">
 </head>
+
 <body>
+
     <div class="container-fluid menu">
         <div class="row row-12 " style="justify-content:space-evenly ; display:flex;">
             <div class="col-3  despliegue">
                 <i class="mt-4 bi bi-menu-button-fill icono" id="icono" style="font-size:30px ;">
-    
+
                     <div class="container-lista" id="container">
-    
+  
                         <ul class="lista">
                             
                             <img src="./assets/img/CineColombia logo banner.png" style="height: 80px; width:200px;margin-top: 15px;"  alt=""> 
-    
+
                             <!--i class="bi bi-x-circle cerrar" id="cerrar"></-i-->
-    
+
                             <li><a class="botonCine" type="button" href="#">CINE</a><br>
                                 <div class="hijosBoton ">
-    
+
                                     <a href="#">CARTELERA</a> <br>
                                     <a href="#">PRONTO</a>
                                 </div>
@@ -35,7 +37,7 @@
                             <li>
                                 <a class="botonAlternativo" type="button" href="#">CINE ALTERNATIVO</a> <br>
                                 <div class="hijosBoton">
-    
+
                                     <a href="#">OPERA</a> <br>
                                     <a href="#">BALLET</a> <br>
                                     <a href="#">TEATRO</a> <br>
@@ -44,64 +46,47 @@
                             </li>
                             <li><a class="botonComida" type="button" href="#">COMIDAS</a>
                             </li>
-    
+
                         </ul>
-    
+
                     </div>
-    
-    
+
+
                 </i>
                 
                 <img style="height: 80px; width:200px;margin-top: 15px; "
                     src="./assets/img/CineColombia logo banner.png" alt="">
             </div>
-    
+
             <div class="col-9 col  " style="display:flex ;">
-    
+
                 <div class=" mx-auto d-block mt-2">
-    
+
                     <a class="btn btn-primary mt-4 botones" type="button" href="">Cartelera</a>
                     <a class="btn btn-primary mt-4 botones" type="button" href="">Pronto</a>
                     <a class="btn btn-primary mt-4 botones" type="button" href="">Cine Alternativo</a>
-                     <a class="btn btn-primary mt-4 botones" type="button" href="">Comidas</a>
+                    <a class="btn btn-primary mt-4 botones" type="button" href="">Comidas</a>
                 </div>
-    
+
                 <input type="text" autocomplete="off" required="required" aria-label="Buscar" placeholder="Buscar"
                     class="input is-rounded buscador ">
-    
+
                 <div class="ciudad" style="display:flex ;">
                     <h4 id="ciudad">ciudad</h4>
                     <i class=" mt-1  bi bi-geo-alt-fill"></i>
                 </div>
-    
+
             </div>
-    
+
         </div>
-    
-    
-    </div>
-
-
-    <div class="apartados">
-        <p>   <a class="enlace" href="./comida.html">Comidas </a>/ <a class="enlace" id="apartadoFiltro1" href="./comidaFiltro1.html">
-        </a>  </p>
-
-    </div>
-
- <div class="container">
-
-
-    <h2 id="nombre" class="my-5"> </h2>
-    <div class="row" id="fila">
 
 
     </div>
- </div>   
 
-    
-
-
-    <script src="../controllers/controladorComidaFiltro1.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./src/controllers/controladorNavegador.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
