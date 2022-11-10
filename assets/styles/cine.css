@@ -1,4 +1,7 @@
 
+.Previous{
+    z-index: -1;
+}
 
 .navbar{
     position:fixed;
@@ -15,8 +18,10 @@ main{
     padding-top: 100px;
 }
 
-.menu{
-    background-color: black;
-}
 
+
+
+.enlace{
+ text-decoration: none; 
+}
 

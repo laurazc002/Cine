@@ -12,3 +12,14 @@
  padding-top: 50px;   
 
 }
+
+.enlace{
+    text-decoration: none;
+    color: black;
+
+}
+
+a.enlace:hover{
+    font-size: 20px;
+    color: rgb(120, 112, 78);
+}
